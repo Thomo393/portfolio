@@ -1,0 +1,236 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Thomo Mamalelala</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: white;
+            color: purple;
+            margin: 0;
+            padding: 0;
+        }
+        header {
+            text-align: center;
+            padding: 50px;
+            background-color: purple;
+            color: white;
+        }
+        header h1 {
+            margin: 0;
+            font-size: 2.5em;
+        }
+        nav {
+            display: flex;
+            justify-content: center;
+            background-color: purple;
+            padding: 10px;
+        }
+        nav a {
+            color: white;
+            text-decoration: none;
+            margin: 0 15px;
+            font-weight: bold;
+            font-size: 1.2em;
+        }
+        .home-section, .content-section {
+            display: none;
+            padding: 50px;
+        }
+        .home-section {
+            display: block; /* Display the home section by default */
+            text-align: center;
+            padding: 100px;
+            background-color: white;
+        }
+        .home-section h2 {
+            font-size: 2em;
+            margin: 0;
+        }
+        .home-section p {
+            font-size: 1.2em;
+            margin: 20px 0;
+            color: purple;
+        }
+        .animated-text {
+            display: inline-block;
+            overflow: hidden;
+            white-space: nowrap;
+            box-sizing: border-box;
+            animation: typing 5s steps(40, end) 1, blink-caret 0.75s step-end infinite;
+            font-size: 2em;
+            font-weight: bold;
+            color: purple;
+        }
+        @keyframes typing {
+            from { width: 0; }
+            to { width: 100%; }
+        }
+        @keyframes blink-caret {
+            from, to { border-right-color: transparent; }
+            50% { border-right-color: purple; }
+        }
+        footer {
+            text-align: center;
+            padding: 20px;
+            background-color: purple;
+            color: white;
+            position: fixed;
+            bottom: 0;
+            width: 100%;
+        }
+        .detail-heading {
+            font-size: 1.8em;
+            margin-bottom: 20px;
+        }
+        .detail-content {
+            font-size: 1.2em;
+            line-height: 1.6;
+        }
+    </style>
+</head>
+<body>
+
+<header>
+    <h1>Thomo Mamalelala</h1>
+</header>
+
+<nav>
+    <a href="#" onclick="showSection('home')">Home</a>
+    <a href="#" onclick="showSection('employment')">Employment</a>
+    <a href="#" onclick="showSection('education')">Education</a>
+    <a href="#" onclick="showSection('portfolio')">Portfolio</a>
+    <a href="#" onclick="showSection('contacts')">Contacts</a>
+    <a href="#" onclick="showSection('certificates')">Certificates</a>
+</nav>
+
+<div id="home" class="home-section">
+    <h2>HI, MY NAME IS THOMO MAMALELALA</h2>
+    <p class="animated-text">Welcome to the professional portfolio of Thomo Mamalelala!</p>
+    <p class="static-text">
+        Explore sections dedicated to my employment history, educational background, and portfolio projects to understand my contributions to the field of finance. Additionally, check out the Contacts section for ways to connect with me. For those interested in my continued professional development, the Certificates section lists all the short courses and certifications I have completed.
+    </p>
+    <p class="static-text">
+        Feel free to navigate through the different sections to learn more about my professional journey and the skills I bring to the table.
+    </p>
+</div>
+
+
+<div id="employment" class="content-section">
+    <h2 class="detail-heading">Employment</h2>
+    <div class="detail-content">
+        <p><strong>Actuarial Intern (Jun 2024 - Present)</strong> <br> 
+        Empirica Actuaries, Gaborone <br>
+        Responsibilities:
+        <ul>
+            <li>Designed and implemented advanced tools such as the PAA Tool and GMM Tool to enhance risk assessment accuracy.</li>
+            <li>Conducted in-depth analysis of surplus to optimize financial performance and drive strategic decisions.</li>
+            <li>Developed and applied the Wilkie Model for robust financial forecasting and risk management.</li>
+            <li>Engineered and managed a Balanced Fund Portfolio to ensure optimal asset allocation and returns.</li>
+            <li>Coded and optimized the Subledger and Trial Balance in R to streamline financial reporting and analysis.</li>
+            <li>Collaborated with cross-functional teams to tailor solutions that meet evolving client needs and industry standards.</li>
+            <li>Monitored and interpreted market trends to provide actionable insights and strategic recommendations.</li>
+            <li>Maintained meticulous documentation to ensure regulatory compliance and support data-driven decision-making.</li>
+            <li>Provided exemplary customer service, addressing inquiries with precision and professionalism.</li>
+
+        </ul>
+        </p>
+        <p><strong>Research and Product Development Intern (May 2023 - Aug 2023)</strong> <br>
+        National Development Bank, Gaborone <br>
+        Responsibilities:
+        <ul>
+            <li>Conducted market research and analyzed trends.</li>
+            <li>Supported the design and refinement of financial products.</li>
+            <li>Created detailed reports and presentations for decision-making.</li>
+            <li>Monitored industry trends to identify emerging opportunities.</li>
+            <li>Assisted in strategic planning and collaborated with cross-functional teams.</li>
+        </ul>
+        </p>
+    </div>
+</div>
+
+<div id="education" class="content-section">
+    <h2 class="detail-heading">Education</h2>
+    <div class="detail-content">
+        <p><strong>Bachelor of Science (Mathematics of Finance)</strong> <br> 
+        University of Botswana, Gaborone (Aug 2020 - May 2024) <br>
+        Key Skills and Achievements:
+        <ul>
+            <li>Developed strong analytical skills in quantitative finance.</li>
+            <li>Applied pricing models to financial products.</li>
+            <li>Conducted market research on financial markets.</li>
+            <li>Mastered financial software tools for data analysis.</li>
+            <li>Studied risk management techniques applicable to insurance.</li>
+            <li>Produced detailed reports and collaborated on financial projects.</li>
+        </ul>
+        </p>
+        <p><strong>Certificate (Data Analysis)</strong> <br>
+        University of Cape Town, Cape Town (Jan 2024 - May 2024) <br>
+        Skills Acquired:
+        <ul>
+            <li>Analyzed financial data for accurate insurance quotes.</li>
+            <li>Applied advanced statistical methods for data analysis.</li>
+            <li>Created detailed reports and visualizations.</li>
+            <li>Managed data projects and collaborated on case studies.</li>
+        </ul>
+        </p>
+    </div>
+</div>
+
+<div id="portfolio" class="content-section">
+    <h2 class="detail-heading">Portfolio</h2>
+    <div class="detail-content">
+        <p><strong>Advanced Tool Development and Portfolio Management</strong><br>
+            Worked extensively with the PAA Tool and GMM Tool to refine risk assessment processes and enhance financial analysis capabilities. Managed and optimized a Balanced Fund Portfolio to ensure strategic asset allocation and maximize returns. Contributions include:
+            <ul>
+                <li>Implementing the PAA Tool for precise risk evaluation</li>
+                <li>Implementing the GMM Tool to streamline financial modeling and analysis</li>
+                <li>Engineering and managing a Balanced Fund Portfolio for optimal performance</li>
+                <li>Integrating insights from market trends and financial forecasting into portfolio strategies</li>
+            </ul>
+            </p>
+    </div>
+</div>
+
+<div id="certificates" class="content-section">
+    <h2 class="detail-heading">Certificates</h2>
+    <div class="detail-content">
+        <!-- Add your short course certificates here -->
+        <p><strong>Certificate Name (Institution, Date)</strong><br>
+        Description of the certificate or course.</p>
+    </div>
+</div>
+
+<div id="contacts" class="content-section">
+    <h2 class="detail-heading">Contacts</h2>
+    <div class="detail-content">
+        <p>Email: thomo.mamalelala@gmail.com</p>
+        <p>Phone: +267 77831913</p>
+        <p>LinkedIn: <a href="https://www.linkedin.com/in/thomo-mamalelala">Thomo Mamalelala</a></p>
+        <p>Driver's License: Class B</p>
+        <p>Nationality: Motswana</p>
+    </div>
+</div>
+
+<footer>
+    <p>&copy; 2024 Thomo Mamalelala. All rights reserved.</p>
+</footer>
+
+<script>
+    function showSection(sectionId) {
+        var sections = document.querySelectorAll('.home-section, .content-section');
+        sections.forEach(function(section) {
+            section.style.display = 'none';
+        });
+
+        document.getElementById(sectionId).style.display = 'block';
+    }
+
+    // Display the home section by default
+    showSection('home');
+</script>
+
+</body>
+</html>
